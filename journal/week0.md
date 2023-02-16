@@ -7,4 +7,4 @@
 
 ## Conceptual Design - Real Napkin Diagram
 
-![](asset/Conceptual%20Design-%20Napkin%20Diagram.png)
+![](assets/Conceptual%20Design-%20Napkin%20Diagram.png)
