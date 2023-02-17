@@ -34,7 +34,7 @@ I used forget password and received email and then reset the passwords for both 
   Assigned admin and billing permission to admin user.
   
 
- ![](assets/Reset%20password%20.png)
+ ![](assets/User%20permission%20attached%20.png)
 
 
 ✅ Setup MFA for Root and admin Account.
