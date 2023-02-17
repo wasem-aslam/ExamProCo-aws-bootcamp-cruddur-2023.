@@ -3,7 +3,7 @@
 
 ```
 
-✅ Destroyed and reset AWS Credentials for root and admin user.
+✅ Destroyed and reset AWS Credentials for root and admin user 
 ✅ Setup MFA for Root and admin Account.
 ✅ Used and Tested CloudShell from AWS console.
 ✅ AWS CLI installed in Gitpod and added AWS Access Keys and secret Access key.
@@ -30,6 +30,11 @@ I used forget password and received email and then reset the passwords for both 
 
  ![](assets/Reset%20password%20.png)
 
+ 
+  Assigned admin and billing permission to admin user.
+  
+
+ ![](assets/Reset%20password%20.png)
 
 
 ✅ Setup MFA for Root and admin Account.
