@@ -28,6 +28,8 @@ The first week of the  bootcamp provided me with a solid foundation in a variety
 ✅ Setup EventBridge, hookup Health Dashboard to SNS for service health notifications
 
 ✅ Scrubbing Github History of Sensitive Data
+
+✅ Request AWS support for service limit etc
 ```
 -----------------------||||||############################################################||||||-------------------
 
@@ -155,3 +157,12 @@ Here is Finally created EventBridge Event.
 ![](assets/Final%20Event%20Created.png)
 
 ✅ Scrubbing Github History of Sensitive Data
+
+
+✅ Request AWS support for service limit etc
+
+I requested AWS through management console and requested.
+
+Here is acreenshot showing received confirmation.
+
+![](assets/Email%20received%20from%20AWS%20support.png)
