@@ -117,8 +117,6 @@ I used real napkin for conceptual diagram.
 
 I created aws_config.json and committed in my Repo and then used folowing command.
 
-Topic created confirmation.
-![](assets/Billing%20Alarm%20Topic%20SNS.png)
 
 Billing Alarm created using Gitpod CLI.
 
@@ -127,6 +125,10 @@ Billing Alarm created using Gitpod CLI.
 
 <pre><code>aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm_config.json
 </code></pre>
+
+Topic created confirmation.
+![](assets/Billing%20Alarm%20Topic%20SNS.png)
+
 
 Here is Alarm trigger command used on CLI.
 ![](assets/CLI%20command%20run%20to%20create%20watcCloud%20Alarm%20.png)
