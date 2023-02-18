@@ -118,6 +118,14 @@ Billing Alarm created using Gitpod CLI.
 <pre><code>aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm_config.json
 </code></pre>
 
+Here is Alarm trigger command used on CLI.
+![](assets/CLI%20command%20run%20to%20create%20watcCloud%20Alarm%20.png)
+
+AWS Management CLI showing Alarm is triggered.
+
+![](assets/Cloud%20Watch%20Alarm%20created-%20Evidence.png)
+
+
 
 ✅ Setup EventBridge, hookup Health Dashboard to SNS for service health notifications
 
