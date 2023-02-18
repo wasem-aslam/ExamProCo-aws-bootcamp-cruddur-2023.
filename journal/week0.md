@@ -15,7 +15,9 @@
 
 ✅ Created a Conceptual Design Diagram on a Real Napkin
 
-✅ EventBridge used to trigger, Health Dashboard to SNS and send notification when there is a service issue
+✅ Create an Alarm via AWS CLI
+
+✅ Setup EventBridge, hookup Health Dashboard to SNS for service health notifications
 ```
 -----------------------||||||############################################################||||||-------------------
 
@@ -89,3 +91,21 @@ I used first time Lucid and learned how it works and after spending sometime abl
 I used real napkin for conceptual diagram.
 
 ![](assets/Conceptual%20Design-%20Napkin%20Diagram.png)
+
+
+✅ Create an Alarm via AWS CLI
+
+![Just followed following Guide](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-estimatedcharges-alarm/)
+
+I created aws_config.json and committed in my Repo and then used folowing command.
+
+
+<pre><code>aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm_config.json
+</code></pre>
+
+
+✅ Setup EventBridge, hookup Health Dashboard to SNS for service health notifications
+
+Just created sns topic and Servicehealth event to trigger when there would be problem. 
+
+
