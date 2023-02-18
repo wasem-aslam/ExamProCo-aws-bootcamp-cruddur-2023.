@@ -31,7 +31,6 @@ Following Homework Tasks are completed.
 ✅ Used and Tested CloudShell from AWS console.
 ✅ AWS CLI installed in Gitpod and added AWS Access Keys and secret Access key.
 ✅ Configured 2 AWS Budget using Gitpod CLI 
-✅ Used the CLI from Gitpod to create a Budget and a Billing Alarm
 ✅ Created CI/CD Lucid Logical Architectual Diagram
 ✅ Created a Conceptual Design Diagram on a Real Napkin
 ✅ Create an Cloud Watch Alarm via AWS CLI
