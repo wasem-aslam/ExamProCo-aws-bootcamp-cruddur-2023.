@@ -1,6 +1,14 @@
 # Week 0 — Billing and Architecture
 
 
+
+During the first week of the bootcamp, I completed several tasks and learned about a variety of AWS services. These services included AWS budget ,Billing , SNS, Event Bridge among others. I also gained hands-on experience with these services through watching videos and by doing homework.
+
+The first week of the  bootcamp provided me with a solid foundation in a variety of AWS services and allowed me to gain practical experience  through hands-on exercises.
+
+
+
+
 ```
 
 ✅ Destroyed and reset AWS Credentials for root and admin user 
