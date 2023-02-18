@@ -99,7 +99,7 @@ I used real napkin for conceptual diagram.
 
 ✅ Create an Alarm via AWS CLI
 
-![Just followed following Guide](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-estimatedcharges-alarm/)
+[Just followed following Guide](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-estimatedcharges-alarm/)
 
 I created aws_config.json and committed in my Repo and then used folowing command.
 
