@@ -15,20 +15,12 @@ The first week of the  bootcamp provided me with a solid foundation in a variety
 ✅ Setup MFA for Root and admin Account.
 ✅ Used and Tested CloudShell from AWS console.
 ✅ AWS CLI installed in Gitpod and added AWS Access Keys and secret Access key.
-
 ✅ Configured 2 AWS Budget using Gitpod CLI 
-
 ✅ Used the CLI from Gitpod to create a Budget and a Billing Alarm
 ✅ Created CI/CD Lucid Logical Architectual Diagram
-
 ✅ Created a Conceptual Design Diagram on a Real Napkin
-
 ✅ Create an Alarm via AWS CLI
-
 ✅ Setup EventBridge, hookup Health Dashboard to SNS for service health notifications
-
-✅ Scrubbing Github History of Sensitive Data
-
 ✅ Request AWS support for service limit etc
 ```
 -----------------------||||||############################################################||||||-------------------
@@ -156,7 +148,6 @@ Here is Finally created EventBridge Event.
 
 ![](assets/Final%20Event%20Created.png)
 
-✅ Scrubbing Github History of Sensitive Data
 
 
 ✅ Request AWS support for service limit etc
