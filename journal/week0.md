@@ -107,6 +107,8 @@ I used real napkin for conceptual diagram.
 
 I created aws_config.json and committed in my Repo and then used folowing command.
 
+Topic created confirmation.
+![](assets/Billing%20Alarm%20Topic%20SNS.png)
 
 <pre><code>aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm_config.json
 </code></pre>
