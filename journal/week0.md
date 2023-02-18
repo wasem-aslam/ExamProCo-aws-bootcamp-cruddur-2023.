@@ -6,7 +6,13 @@ During the first week of the bootcamp, I completed several tasks and learned abo
 
 The first week of the  bootcamp provided me with a solid foundation in a variety of AWS services and allowed me to gain practical experience  through hands-on exercises.
 
+To ensure that our cruddur app is secure, high-performing, and efficient on the AWS platform, we need to take into account the AWS** well-architected framework**. This framework consists of five pillars, namely Operational Excellence, Security, Reliability, Performance Efficiency, and Cost Optimization, with Sustainability as an optional sixth pillar.
 
+Operational Excellence involves constantly improving and automating processes to support our business objectives, such as incident management, monitoring, and logging. The Security Pillar focuses on safeguarding data and systems from potential threats by implementing controls like access management, encryption, and network security. The Reliability Pillar aims to minimize disruptions and ensure systems remain available and functional, using practices such as fault tolerance, disaster recovery, and self-healing. The Performance Efficiency Pillar aims to utilize resources effectively and optimize system performance using techniques like load balancing, caching, and auto-scaling. The Cost Optimization Pillar aims to reduce costs while maintaining or enhancing the level of service using practices such as resource optimization, cost monitoring, and capacity planning. The Sustainability Pillar focuses on minimizing the environmental impact of systems and promoting sustainability through efficient resource use and waste reduction.
+
+By considering these pillars during the design and implementation of our cruddur app, we can make sure that it is secure, reliable, performant, cost-effective, and environmentally responsible. In preparation for this, I have spent a significant amount of time watching bootcamp videos and conducting extensive research on the necessary tools and services to complete this task, gaining hands-on practical experience.
+
+Following Homework Tasks are completed.
 
 
 ```
@@ -19,7 +25,7 @@ The first week of the  bootcamp provided me with a solid foundation in a variety
 ✅ Used the CLI from Gitpod to create a Budget and a Billing Alarm
 ✅ Created CI/CD Lucid Logical Architectual Diagram
 ✅ Created a Conceptual Design Diagram on a Real Napkin
-✅ Create an Alarm via AWS CLI
+✅ Create an Cloud Watch Alarm via AWS CLI
 ✅ Setup EventBridge, hookup Health Dashboard to SNS for service health notifications
 ✅ Request AWS support for service limit etc
 ```
@@ -97,7 +103,7 @@ I used real napkin for conceptual diagram.
 ![](assets/Conceptual%20Design-%20Napkin%20Diagram.png)
 
 
-✅ Create an Alarm via AWS CLI
+✅ Create an CloudWatch Alarm via AWS CLI
 
 [Just followed following Guide](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-estimatedcharges-alarm/)
 
