@@ -123,4 +123,24 @@ Billing Alarm created using Gitpod CLI.
 
 Just created sns topic and Servicehealth event to trigger when there would be problem. 
 
+Created service health topic from gitpod CLI.
+
+![](assets/SNS%20topic%20service%20health%20using%20CLI.png)
+
+Screenshot showing confirmation from my email done for the SNS topic subscription.
+
+![](assets/Service%20health%20sns%20topic%20uisng%20CLI.png)
+
+Then I simply created Event in Event Bridge using console and selected recently created topic.
+
+![](assets/Even%20Bridge%20screenshot%201.png)
+
+Showing the details.
+
+![](assets/Event%20Bridge%20screnshot%202.png)
+
+
+Here is Finally created EventBridge Event.
+
+![](assets/Final%20Event%20Created.png)
 
