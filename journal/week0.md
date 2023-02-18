@@ -59,7 +59,7 @@ I used forget password and received email and then reset the passwords for both 
 
 ✅ Setup MFA for Root and admin Account.
 
-I also enabled Multi factor Authentication for accounts.
+I also enabled Multi factor Authentication for accounts uisng google authenticator app on my phone.
 
  ![](assets/User%20%20MFA%20enabled%20.png)
 
@@ -76,7 +76,7 @@ My cloud shell showing on manmagement console.
 
 ✅ AWS CLI installed in Gitpod and added AWS Access Keys and secret Access key.
 
-Here, I followed the following Guideline and able to setup Gitpord CLI. Generated acess key and security id from AWS account and just followed and used commands. After completing this just working fine even after closing gitpord and starting again. I faced issue during this but after troubleshooting find was using space before the command.  
+Here, I followed the  Guideline and able to setup Gitpord CLI. Generated acess key and security id from AWS account and just followed and used commands which can be seen in screenshot. After completing this just working fine even after closing gitpord and starting again. I faced issue during this but after troubleshooting find was using space before the command. Exported environment variables also.  
 
  ![](assets/Gitpod%20CLI%20.png)
 
