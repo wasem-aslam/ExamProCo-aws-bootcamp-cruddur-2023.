@@ -88,7 +88,7 @@ Cretaed budget.json and notifications-with-subscribers.json in aws/json director
 
 I used first time Lucid and learned how it works and after spending sometime able to create desired following diagram.
 
-[Click here to view direct Link of Lucid Diagram](https://lucid.app/lucidchart/e2f6c077-0638-4498-8379-7b0e02605ba9/edit?viewport_loc=-459%2C4%2C3133%2C1506%2C0_0&invitationId=inv_b1356024-5eb9-4baa-ba08-a1f422e12cb5)
+[Click here to view direct Link of Lucid Diagram](https://lucid.app/lucidchart/e2f6c077-0638-4498-8379-7b0e02605ba9/edit?viewport_loc=131%2C-138%2C2241%2C1185%2C0_0&invitationId=inv_b1356024-5eb9-4baa-ba08-a1f422e12cb5)
 
 ![](assets/Lucid%20Logical%20Architectual%20Diagram.png)
 
