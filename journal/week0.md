@@ -110,6 +110,11 @@ I created aws_config.json and committed in my Repo and then used folowing comman
 Topic created confirmation.
 ![](assets/Billing%20Alarm%20Topic%20SNS.png)
 
+Billing Alarm created using Gitpod CLI.
+
+![](assets/Billing%20Alarm%20using%20CLI.png)
+
+
 <pre><code>aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm_config.json
 </code></pre>
 
