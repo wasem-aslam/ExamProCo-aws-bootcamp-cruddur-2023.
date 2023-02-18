@@ -26,6 +26,8 @@ The first week of the  bootcamp provided me with a solid foundation in a variety
 ✅ Create an Alarm via AWS CLI
 
 ✅ Setup EventBridge, hookup Health Dashboard to SNS for service health notifications
+
+✅ Scrubbing Github History of Sensitive Data
 ```
 -----------------------||||||############################################################||||||-------------------
 
@@ -152,3 +154,4 @@ Here is Finally created EventBridge Event.
 
 ![](assets/Final%20Event%20Created.png)
 
+✅ Scrubbing Github History of Sensitive Data
