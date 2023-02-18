@@ -6,11 +6,20 @@ During the first week of the bootcamp, I completed several tasks and learned abo
 
 The first week of the  bootcamp provided me with a solid foundation in a variety of AWS services and allowed me to gain practical experience  through hands-on exercises.
 
-To ensure that our cruddur app is secure, high-performing, and efficient on the AWS platform, we need to take into account the AWS** well-architected framework**. This framework consists of five pillars, namely Operational Excellence, Security, Reliability, Performance Efficiency, and Cost Optimization, with Sustainability as an optional sixth pillar.
+AWS Well-Architected Framework is a tool provided by Amazon Web Services (AWS) to help us design and build applications that are secure, efficient, and reliable. Here are some simple steps to follow when using the framework for a cruddur application:
 
-Operational Excellence involves constantly improving and automating processes to support our business objectives, such as incident management, monitoring, and logging. The Security Pillar focuses on safeguarding data and systems from potential threats by implementing controls like access management, encryption, and network security. The Reliability Pillar aims to minimize disruptions and ensure systems remain available and functional, using practices such as fault tolerance, disaster recovery, and self-healing. The Performance Efficiency Pillar aims to utilize resources effectively and optimize system performance using techniques like load balancing, caching, and auto-scaling. The Cost Optimization Pillar aims to reduce costs while maintaining or enhancing the level of service using practices such as resource optimization, cost monitoring, and capacity planning. The Sustainability Pillar focuses on minimizing the environmental impact of systems and promoting sustainability through efficient resource use and waste reduction.
+We will consider our application requirements and goals, including our functional and non-functional requirements.
 
-By considering these pillars during the design and implementation of our cruddur app, we can make sure that it is secure, reliable, performant, cost-effective, and environmentally responsible. In preparation for this, I have spent a significant amount of time watching bootcamp videos and conducting extensive research on the necessary tools and services to complete this task, gaining hands-on practical experience.
+Choose the right AWS services for our application based on the requirements.
+
+Follow the five pillars of the AWS **Well-Architected Framework**: operational excellence, security, reliability, performance efficiency, and cost optimization.
+
+Use the AWS Well-Architected Tool to assess your application's architecture and identify any issues.
+
+Review and optimize our application's architecture based on the recommendations from the tool.
+
+By following these steps and using the AWS Well-Architected Framework, we can ensure that our application is built on a solid foundation and is ready to meet the demands of required users.
+
 
 Following Homework Tasks are completed.
 
