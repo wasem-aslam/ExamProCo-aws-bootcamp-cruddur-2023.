@@ -8,7 +8,7 @@ tasks:
       unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
-- name: Initialize Frontend and Backend
+  - name: Initialize Frontend and Backend
     init: |
       cd /workspace/aws-bootcamp-cruddur-2023/backend-flask
       pip install --upgrade pip
