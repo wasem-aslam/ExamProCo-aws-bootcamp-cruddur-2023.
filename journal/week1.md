@@ -1,6 +1,6 @@
 # Week 1 — App Containerization
 
-Technical Task
+## Technical Task
 ```
 ✅ Create a new GitHub repo
 ✅ Launch the repo within a Gitpod workspace
@@ -14,7 +14,7 @@ Technical Task
 ✅ Ensure we can orchestrate multiple containers to run side by side
 ✅ Mount directories so we can make changes while we code
 ```
-Homework Challenges    
+## Homework Challenges    
 
 ```
 ✅ Run the dockerfile CMD as an external script
@@ -25,3 +25,23 @@ Homework Challenges
 ✅ Learn how to install Docker on your localmachine and get the same containers running outside of Gitpod / Codespaces
 ✅ Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes. 
 ```
+
+## Technical Task
+
+I have completed all the tasks mentioned above in 'Technical Task' and run individual containers.
+All my code is committed in my Repo as a proof.
+
+After completing this step, wrote docker compose yml file where i also added enviromnets,network and ports.
+
+![]()
+
+
+I also added npm install in gitpod.yml file so i dont need to do everytime.
+
+gitpod.yml screenshot.
+![]()
+
+
+
+Lets run the docker compose!
+
