@@ -41,14 +41,14 @@ I also added npm install in gitpod.yml file so i dont need to do everytime.
 Gitpod.yml screenshot.
 ![](assets/Gitpod.png)
 
+Opened the ports.
+
+![](assets/Opened%20the%20ports.png)
 
 Docker Container 
 
 ![](assets/Docker%20Containers%20Images%20.png)
 
-Opened the ports.
-
-![](assets/Opened%20the%20ports.png)
 
 
 postgreSQL connected
