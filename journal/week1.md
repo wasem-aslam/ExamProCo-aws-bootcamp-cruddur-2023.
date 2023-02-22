@@ -33,15 +33,33 @@ All my code is committed in my Repo as a proof.
 
 After completing this step, wrote docker compose yml file where i also added enviromnets,network and ports.
 
-![]()
+![](assets/Docker%20compose%20yaml.png)
 
 
 I also added npm install in gitpod.yml file so i dont need to do everytime.
 
-gitpod.yml screenshot.
-![]()
+Gitpod.yml screenshot.
+![](assets/Gitpod.png)
+
+
+Docker Container 
+
+![](assets/Docker%20Containers%20Images%20.png)
+
+Opened the ports.
+
+![](assets/Opened%20the%20ports.png)
+
+
+postgreSQL connected
+
+![](PostgreSQL%20connected.png)
+
+
+Final 
+![](assets/Final%20cruddur%20after%20login.png)
 
 
 
-Lets run the docker compose!
+
 
