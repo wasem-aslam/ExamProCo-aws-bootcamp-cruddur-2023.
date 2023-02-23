@@ -61,5 +61,25 @@ Final
 
 
 
+✅ Run the dockerfile CMD as an external script
+
+Cretaed app.py and Dockerfile in Visualstudio locally.
+Dockerfile
+,,,
+FROM python:3.8-alpine
+COPY . /app
+WORKDIR /app
+CMD ["python","app.py"]
+,,,
+
+app.py
+'''
+print("Hello World")
+'''
+
+Run the command to build image
+'''
+docker build -t helloworld .
+'''
 
 
