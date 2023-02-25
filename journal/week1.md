@@ -155,7 +155,7 @@ This is how looks like in gitpod and when run the 'docker compose up' works fine
 
 ![](assets/showing%20healthy.png)
 
-After that i chnaged the port to wrong port like 5000 instead 3000 and run the copose up and can see all other containers are up but frontend is unhealthy which can be seen in docker tab and also in ps command in terminal.
+After that i chnaged the port to wrong port like 5000 instead 3000 and run the 'docker run compose up' and can see all other containers are up but frontend is unhealthy which can be seen in docker tab and also in ps command in terminal.
 
 ![](assets/Shiwing%20unhealthy.png)
 
