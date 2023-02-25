@@ -51,9 +51,13 @@ Docker Container
 
 ![](assets/Docker%20Containers%20Images%20.png)
 
+For DynamoDB local followed this 
+[Guideline](https://github.com/100DaysOfCloud/challenge-dynamodb-local)
 
+As table is created with items and showing table in screenshot.
+![](assets/DynamoDB%20LOcal.png)
 
-postgreSQL connected
+PostgreSQL connected
 
 ![](assets/PostgreSQL%20connected.png)
 
