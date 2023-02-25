@@ -147,6 +147,40 @@ I followed the following
 
 First wrote dokerfile as single stage as showing in screenshot and also wrote simple helloworld program in go lang langauge.
 
+Helloworld.go
+```
+package main
+import "fmt"
+func main() {
+fmt.Println("hello world")
+}
+```
+
+Dockerfile code for single-stage.
+```
+FROM golang:1.13.1
+WORKDIR /tmp
+COPY helloworld.go .
+RUN GOOS=linux go build -a -installsuffix cgo -o helloworld .
+CMD ["./helloworld"]%
+```
+
+Dockerfile code for multi-stage.
+
+```
+FROM golang:1.13.1 as multistage
+WORKDIR /tmp
+COPY helloworld.go .
+RUN GOOS=linux go build -a -installsuffix cgo -o helloworld .
+CMD ["./helloworld"]
+
+FROM alpine:3.10.2
+WORKDIR /root
+COPY --from=multistage /tmp/helloworld .
+CMD ["./helloworld"]%
+```
+
+After saving code build comands used.
 
 ```
 docker build -t single.stage .
@@ -181,6 +215,20 @@ After creating multi stage image run the image to container and its hwoing in my
 ✅ Research best practices of Dockerfiles and attempt to implement it in your Dockerfile
 
 I read [following article](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) and tried to use some of the attributes but it seems more technical so i simple used as in multi stage.
+
+Dockerfile multistage.
+```
+FROM golang:1.13.1 as multistage
+WORKDIR /tmp
+COPY helloworld.go .
+RUN GOOS=linux go build -a -installsuffix cgo -o helloworld .
+CMD ["./helloworld"]
+
+FROM alpine:3.10.2
+WORKDIR /root
+COPY --from=multistage /tmp/helloworld .
+CMD ["./helloworld"]%
+```
 
 ![](assets/multi%20stage%20docker%20file.png)
 
