@@ -28,8 +28,10 @@
 
 ## Technical Task
 
-I have completed all the tasks mentioned above in 'Technical Task' and run individual containers.
+I have completed all the tasks mentioned above in 'Technical Task' and run individual containers using Andrew 
+[Guideline](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-1/journal/week1.md)
 All my code is committed in my Repo as a proof.
+
 
 After completing this step, wrote docker compose yml file where i also added enviromnets,network and ports.
 
@@ -53,7 +55,7 @@ Docker Container
 
 postgreSQL connected
 
-![](PostgreSQL%20connected.png)
+![](assets/PostgreSQL%20connected.png)
 
 
 Final 
