@@ -196,6 +196,14 @@ Docker local app showing container running.
 
 ![](assets/Docker%20local%20app%20showing%20container.png)
 
-One container frontend was not running and complaining about environment flast. I troubleshoot and tried to update environment of flask like et FLASK_ENV="development" or set FLASK_ENV=development. but not helped.
+One container frontend was not running and complaining about environment flast. I did troubleshooting and tried to update environment of flask like et FLASK_ENV="development" or set FLASK_ENV=development. but not helped.
+
+![For example](https://stackoverflow.com/questions/52162882/set-flask-environment-to-development-mode-as-default)
+![For example]/https://stackoverflow.com/questions/54794134/flask-env-seems-to-be-ignored-cant-enter-debug-environment)
+
+I have less time so i will troubleshoot this later after submitting my homework.
+
+
+
 
 
