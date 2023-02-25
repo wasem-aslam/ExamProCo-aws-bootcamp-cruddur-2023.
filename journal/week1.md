@@ -139,6 +139,28 @@ As a result of push my image is uploaded to dockerhub repository as showing in u
 ![](assets/Image%20uploaded%20at%20docker%20up.png)
 
 
+✅ Implement a healthcheck in the V3 Docker compose file
+
+I put the code for healthcheck in docker-compose.yml file.
+
+```
+ healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 2
+      start_period: 20s
+```
+This is how looks like in gitpod and when run the 'docker compose up' works fine and showing healthy containers. 
+
+![](assets/showing%20healthy.png)
+
+After that i chnaged the port to wrong port like 5000 instead 3000 and run the copose up and can see all other containers are up but frontend is unhealthy which can be seen in docker tab and also in ps command in terminal.
+
+![](assets/Shiwing%20unhealthy.png)
+
+
+
 
 ✅ Use multi-stage building for a Dockerfile build
 
