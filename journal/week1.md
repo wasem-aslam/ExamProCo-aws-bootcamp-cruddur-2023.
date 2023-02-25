@@ -51,6 +51,11 @@ I also added npm install in gitpod.yml file so i dont need to do everytime.
 Gitpod.yml screenshot.
 ![](assets/Gitpod.png)
 
+
+Docker images  screenshot.
+![](assets/Docker%20Containers%20Images%20.png)
+
+
 Make sure to opened the ports.
 
 ![](assets/Opened%20the%20ports.png)
@@ -64,12 +69,12 @@ For DynamoDB local followed following [Guideline](https://github.com/100DaysOfCl
 As table is created with items and showing table in screenshot.
 ![](assets/DynamoDB%20LOcal.png)
 
-PostgreSQL connected
+PostgreSQL connected successfully by running:  ```psql -Upostgres --host localhost```
 
 ![](assets/PostgreSQL%20connected.png)
 
 
-Final cruddur GUI is showing running in compose container.
+Final cruddur GUI is showing running in composer container.
 ![](assets/Final%20cruddur%20after%20login.png)
 
 As I also aded Notification functionality so working fine.
@@ -106,6 +111,33 @@ At my local terminal at mac showing the program written helloword and dockerfile
 ![](assets/Script%20program.png)
 
 
+Docker file for script.
+
+![](assets/Dockerfile%20for%20script.png)
+
+Docker command build script.
+
+![](assets/Docker%20command%20build%20script.png)
+
+After build step run the docker.
+
+![](assets/Docker%20run%20command%20showing%20reesult.png)
+
+Showing image also in docker local app.
+
+![](assets/Docker%20image%20created%20and%20showing%20in%20docker%20app%20in%20MAC%20.png)
+
+
+✅ Push and tag a image to DockerHub (they have a free tier)
+
+Image taged and pushed to dockerhub registry repository.
+
+![](assets/Docker%20push%20command%202.png)
+
+As a result of push my image is uploaded to dockerhub repository as showing in under my user 'wasemaslam' and repository 'aws-bootcamp-cruddur-2023'
+
+![](assets/Image%20uploaded%20at%20docker%20up.png)
+
 
 
 ✅ Use multi-stage building for a Dockerfile build
@@ -115,18 +147,37 @@ I followed the following
 
 First wrote dokerfile as single stage as showing in screenshot and also wrote simple helloworld program in go lang langauge.
 
-![]()
 
 ```
 docker build -t single.stage .
 ```
-
-
-![]()
-
 ```
 docker build -t multi.stage .
 ```
+
+Here single stage build done.
+![](assets/Single%20stage%20build%20example.png)
+
+As showing imgae is created with size ``` 719 MB ```.
+
+![](assets/Single%20stage%20example.png)
+
+
+Now Docker file is updated with multi stage as showing in screenshot.
+
+Here we run the docker.
+
+![](assets/Docker%20multi%20stage%20run.png)
+
+Multi stage docker image created with only ```7.42 MB ``` as previously with single it was ``` 719 MB ``` so this is the beauty of multistage.
+
+![](assets/multi%20stage%20docker%20file.png)
+
+After creating multi stage image run the image to container and its hwoing in my local docker app.
+
+![](assets/Docker%20container%20running%20from%20local%20.png)
+
+
 
 
 
