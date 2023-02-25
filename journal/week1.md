@@ -284,3 +284,32 @@ I have less time so i will troubleshoot this later after submitting my homework.
 ✅ Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes. 
 
 
+Found out Linux with already installed docker with ami-05e7fa5a3b6085a75 and launched it. I also created key pair to login ssh.
+
+Here is EC2 instance.
+
+I am logged in using .pem keys and can see docker was already installed.
+
+![](assets/EC2%20spin%20with%20already%20docker%20installed.png)
+
+
+Showing docker version.
+
+![](assets/docker%20installed%20already.png)
+
+
+Installed git and cloned my Repo here from github and they tried to copose up but not bale to do. After doing troubleshooting i was able to find out that i need to install 'docker-compose' so installed and then able to start docker-compose.yml file. 'docker'
+
+```
+dokcer-compose up
+```
+![](assets/docker-composer%20up%20.png)
+
+
+Here are showing containers with 'docker ps' command.
+
+
+![](assets/Showing%20container%20.png)
+
+
+
