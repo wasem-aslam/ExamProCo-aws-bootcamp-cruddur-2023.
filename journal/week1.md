@@ -26,18 +26,18 @@
 ✅ Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes. 
 ```
 
-Week1 was tough as i never worked with docker before but i spend quite much time by watching all the homework videos and also watched live cloud job role video which will definately help me to decide where i want to work in cloud.By completing technical task and homework challange i got good understandong of how docker, images and container works.As i also pushed my image to dockerhub so now i understand the purpose of docker registry repository. 
+Week1 was tough as i have not worked before with docker  but i spend quite much time by watching all the homework videos and also watched live cloud job role video which will definitely help me to decide where i want to work in cloud. By completing technical task and homework challange i got good understandong of how docker, images and container works.As i also pushed my image to dockerhub so now i understand the purpose of docker registry repository. 
 
 
 ## Technical Task
 
-I have completed all the tasks mentioned above in 'Technical Task' and run individual containers using Andrew 
+I have completed all the task mentioned above in 'Technical Task' and run individual containers using Andrew 
 [Guideline](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-1/journal/week1.md)
-All my code is committed in my Repo as a proof.
+All my code is committed in my [REPO](https://github.com/wasem-aslam/aws-bootcamp-cruddur-2023) as a proof.
 
 
 
-After completing individualrunning container app was working fine but i forgot to take screenshot. I also asked this question to Andrew in office hours and he said its ok.
+After completing individual running container, app was working fine but i forgot to take screenshot. I also asked this question to Andrew in office hours and he said its ok as i have been went through this process by running individual container apps which can be also checked by my code Repo.
 
 After this step, wrote docker compose yml file where i also added enviromnets,network and ports.
 
@@ -253,8 +253,8 @@ Docker local app showing container running.
 
 One container frontend was not running and complaining about environment flast. I did troubleshooting and tried to update environment of flask like et FLASK_ENV="development" or set FLASK_ENV=development. but not helped.
 
-[For example](https://stackoverflow.com/questions/52162882/set-flask-environment-to-development-mode-as-default)
-[For example](https://stackoverflow.com/questions/54794134/flask-env-seems-to-be-ignored-cant-enter-debug-environment)
+[For example1](https://stackoverflow.com/questions/52162882/set-flask-environment-to-development-mode-as-default)
+[For example2](https://stackoverflow.com/questions/54794134/flask-env-seems-to-be-ignored-cant-enter-debug-environment)
 
 I have less time so i will troubleshoot this later after submitting my homework.
 
