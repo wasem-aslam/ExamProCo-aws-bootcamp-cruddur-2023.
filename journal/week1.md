@@ -178,6 +178,24 @@ After creating multi stage image run the image to container and its hwoing in my
 ![](assets/Docker%20container%20running%20from%20local%20.png)
 
 
+✅ Learn how to install Docker on your localmachine and get the same containers running outside of Gitpod / Codespaces
 
+I downloaded docker app from dockerhub website and installed at my macbook and its working fine.
+
+As you can see in screenshot I pulled all the code from my github locally to my visual studio and run the composer composer.
+
+
+Docker compose up run the command.
+
+![](assets/Dokcer%20compose%20up.png)
+
+
+![](assets/Multi%20container%20running.png)
+
+Docker local app showing container running.
+
+![](assets/Docker%20local%20app%20showing%20container.png)
+
+One container frontend was not running and complaining about environment flast. I troubleshoot and tried to update environment of flask like et FLASK_ENV="development" or set FLASK_ENV=development. but not helped.
 
 
