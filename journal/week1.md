@@ -41,18 +41,18 @@ After completing individualrunning container app was working fine but i forgot t
 
 After this step, wrote docker compose yml file where i also added enviromnets,network and ports.
 
-Here is how compose file looks like and code is already in repo.
+Here is how compose file looks like and code is already in [REPO](https://github.com/wasem-aslam/aws-bootcamp-cruddur-2023/blob/main/docker-compose.yml)
 
 ![](assets/Docker%20compose%20yaml.png)
 
 
 I also added npm install in gitpod.yml file so i dont need to do everytime.
 
-Gitpod.yml screenshot.
+Gitpod.yml screenshot in [REPO](https://github.com/wasem-aslam/aws-bootcamp-cruddur-2023/blob/main/.gitpod.yml)
 ![](assets/Gitpod.png)
 
 
-Docker images  screenshot.
+Docker images screenshot.
 ![](assets/Docker%20Containers%20Images%20.png)
 
 
@@ -64,12 +64,12 @@ Docker copmose container running now as showing in screenshot.
 
 ![](assets/Docker%20Containers%20Images%20.png)
 
-For DynamoDB local followed following [Guideline](https://github.com/100DaysOfCloud/challenge-dynamodb-local)
+For DynamoDB local followed following [Guideline](https://github.com/100DaysOfCloud/challenge-dynamodb-local) and DynamoDB added in compose file [REPO](https://github.com/wasem-aslam/aws-bootcamp-cruddur-2023/blob/main/docker-compose.yml)
 
 As table is created with items and showing table in screenshot.
 ![](assets/DynamoDB%20LOcal.png)
 
-PostgreSQL connected successfully by running:  ```psql -Upostgres --host localhost```
+PostgreSQL connected successfully by running:  ```psql -Upostgres --host localhost``` added code in comppose.yml [REPO](https://github.com/wasem-aslam/aws-bootcamp-cruddur-2023/blob/main/docker-compose.yml)
 
 ![](assets/PostgreSQL%20connected.png)
 
@@ -77,9 +77,9 @@ PostgreSQL connected successfully by running:  ```psql -Upostgres --host localho
 Final cruddur GUI is showing running in composer container.
 ![](assets/Final%20cruddur%20after%20login.png)
 
-As I also aded Notification functionality so working fine.
+As I also aded Notification functionality so working fine [REPO](https://github.com/wasem-aslam/aws-bootcamp-cruddur-2023/blob/main/backend-flask/services/notifications_activities.py)
 
-![](assets/Notifications.png)
+![](assets/Notifications.png) 
 
 
 ## Homework Challenges 
