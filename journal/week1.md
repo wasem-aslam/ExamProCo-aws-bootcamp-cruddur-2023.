@@ -178,6 +178,13 @@ After creating multi stage image run the image to container and its hwoing in my
 ![](assets/Docker%20container%20running%20from%20local%20.png)
 
 
+✅ Research best practices of Dockerfiles and attempt to implement it in your Dockerfile
+
+I read [following article](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) and tried to use some of the attributes but it seems more technical so i simple used as in multi stage.
+
+![](assets/multi%20stage%20docker%20file.png)
+
+
 ✅ Learn how to install Docker on your localmachine and get the same containers running outside of Gitpod / Codespaces
 
 I downloaded docker app from dockerhub website and installed at my macbook and its working fine.
@@ -199,11 +206,11 @@ Docker local app showing container running.
 One container frontend was not running and complaining about environment flast. I did troubleshooting and tried to update environment of flask like et FLASK_ENV="development" or set FLASK_ENV=development. but not helped.
 
 [For example](https://stackoverflow.com/questions/52162882/set-flask-environment-to-development-mode-as-default)
-[For example]/https://stackoverflow.com/questions/54794134/flask-env-seems-to-be-ignored-cant-enter-debug-environment)
+[For example](https://stackoverflow.com/questions/54794134/flask-env-seems-to-be-ignored-cant-enter-debug-environment)
 
 I have less time so i will troubleshoot this later after submitting my homework.
 
 
-
+✅ Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes. 
 
 
