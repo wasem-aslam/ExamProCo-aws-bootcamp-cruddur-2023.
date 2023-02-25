@@ -75,14 +75,14 @@ CMD ["python","app.py"]
 ,,,
 
 app.py
-'''
+```
 print("Hello World")
-'''
+```
 
 Run the command to build image
-'''
+```
 docker build -t helloworld .
-'''
+```
 
 
 ✅ Use multi-stage building for a Dockerfile build
@@ -94,16 +94,16 @@ First wrote dokerfile as single stage as showing in screenshot and also wrote si
 
 ![]()
 
-'''
+```
 docker build -t single.stage .
-'''
+```
 
 
 ![]()
 
-'''
+```
 docker build -t multi.stage .
-'''
+```
 
 
 
