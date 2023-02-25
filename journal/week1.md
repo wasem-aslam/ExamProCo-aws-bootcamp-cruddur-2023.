@@ -61,7 +61,11 @@ postgreSQL connected
 Final 
 ![](assets/Final%20cruddur%20after%20login.png)
 
+Showing Notification also.
 
+![](assets/Notifications.png)
+
+## Homework Challenges 
 
 ✅ Run the dockerfile CMD as an external script
 
