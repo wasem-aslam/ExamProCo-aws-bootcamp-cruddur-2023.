@@ -83,3 +83,25 @@ docker build -t helloworld .
 '''
 
 
+✅ Use multi-stage building for a Dockerfile build
+
+I followed the following   
+[Guideline](http://100daysofdevops.com/use-multi-stage-builds-with-dockerfile/) for multistage.
+
+First wrote dokerfile as single stage as showing in screenshot and also wrote simple helloworld program in go lang langauge.
+
+![]()
+
+'''
+docker build -t single.stage .
+'''
+
+
+![]()
+
+'''
+docker build -t multi.stage .
+'''
+
+
+
