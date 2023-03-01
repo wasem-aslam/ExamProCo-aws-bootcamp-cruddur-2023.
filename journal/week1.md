@@ -281,6 +281,16 @@ One container frontend was not running and complaining about environment flast. 
 I have less time so i will troubleshoot this later after submitting my homework.
 
 
+Tested **Snyk** to find vulnerabilities in my frontend code. Found out there is old node version which can be minor upgrade.
+
+
+![](assets/Snyk1.png)
+
+
+![](assets/Snyk2.png)
+
+
+
 ✅ Launch an EC2 instance that has docker installed, and pull a container to demonstrate you can run your own docker processes. 
 
 
