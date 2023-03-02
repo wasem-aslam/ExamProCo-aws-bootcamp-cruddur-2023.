@@ -111,7 +111,7 @@ AWS console showing ```Cruddur``` group is created.
 
 Added X-ray daemon to docker service in Docker compose file.
 
-```
+ ```
  xray-daemon:
     image: "amazon/aws-xray-daemon"
     environment:
@@ -122,7 +122,7 @@ Added X-ray daemon to docker service in Docker compose file.
       - "xray -o -b xray-daemon:2000"
     ports:
       - 2000:2000/udp
-      ```
+  ```
       
       Added Environment variables also yo doceker-compose.yml
       
