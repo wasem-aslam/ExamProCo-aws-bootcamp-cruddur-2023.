@@ -35,7 +35,17 @@
 
 
 
+
+
+
+
+
 ✅ Run queries to explore traces within Honeycomb.io
+
+
+
+
+
 
 
 
@@ -141,6 +151,8 @@ Sampling rule also showing in AWS CLI.
 ![](assets/week2/Sampling%20Rule%20at%20Console.png)
 
 
+✅ Configure and provision X-Ray daemon within docker-compose and send data back to X-Ray API
+
 After that step, I run the Docker compose UP.
 
 ![](assets/week2/Copmoser%20Up%20.png)
@@ -162,12 +174,15 @@ Service Map
 ![](assets/week2/Traces.png)
 
 
+✅ Observe X-Ray traces within the AWS Console
+
 I performed few more tests by refreshing the page etc.
 ![](assets/week2/More%20traces%20after%20doing%20some%20tests.png)
 
 Service Map after more tests.
 
 ![](assets/week2/Service%20map%20after%20some%20tests.png)
+
 
 
 
