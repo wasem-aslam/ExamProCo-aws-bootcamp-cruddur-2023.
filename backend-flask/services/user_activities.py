@@ -1,15 +1,14 @@
 from datetime import datetime, timedelta, timezone
 class UserActivities:
   def run(user_handle):
-    model = {
-      'errors': None,
-      'data': None
-    }
 
     now = datetime.now(timezone.utc).astimezone()
 
     if user_handle == None or len(user_handle) < 1:
-      model['errors'] = ['blank_user_handle']
+      ({
+      'errors': None,
+      'data': None
+    })['errors'] = ['blank_user_handle']
     else:
       now = datetime.now()
       results = [{
@@ -19,5 +18,21 @@ class UserActivities:
         'created_at': (now - timedelta(days=1)).isoformat(),
         'expires_at': (now + timedelta(days=31)).isoformat()
       }]
-      model['data'] = results
-    return model
+      ({
+      'errors': None,
+      'data': None
+    })['data'] = results
+      subsegment = xray_recorder.begin_subsegment('mock-data')
+    # xray ---
+    dict = {
+      "now": now.isoformat(),
+      "results-size": len(({
+      'errors': None,
+      'data': None
+    })['data'])
+    }
+    subsegment.put_metadata('key', dict, 'namespace')
+    return {
+      'errors': None,
+      'data': None
+    }
