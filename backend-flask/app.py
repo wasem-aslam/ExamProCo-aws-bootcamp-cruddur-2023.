@@ -24,6 +24,8 @@ xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 
 
 app = Flask(__name__)
+# X-RAY ----------
+XRayMiddleware(app, xray_recorder)
 frontend = os.getenv('FRONTEND_URL')
 backend = os.getenv('BACKEND_URL')
 origins = [frontend, backend]
