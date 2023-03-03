@@ -269,5 +269,49 @@ After watching new SubSegment [video](https://www.youtube.com/watch?v=4SGTW0Db5y
 
 
 
+ #  Homework Challenges 
+
+✅ Instrument Honeycomb for the frontend-application to observe network latency between frontend and backend[HARD]
+
+
+
+✅ Add custom instrumentation to Honeycomb to add more attributes eg. UserId, Add a custom span
+
+For this task, I read [Guideline](https://docs.honeycomb.io/getting-data-in/opentelemetry/python/) and used openelementry in home_activities.py
+
+ ```
+from opentelemetry import trace
+
+tracer = trace.get_tracer("home.activities")
+ ```
+ 
+ Spans created with.
+ ```
+ with tracer.start_as_current_span("home-activites-mock-data"):
+      span = trace.get_current_span()
+ ```
+
+Tested backend app on port 4567 as howing in screenshot.
+
+![](assets/week2/Backend%20showing%20data-.png)
+
+Full Span graph
+
+![](assets/week2/Total%20Spans.png)
+
+
+Showing spans.
+
+![](assets/week2/2%20spans%20showing.png)
+
+
+![](assets/week2/2%20spans.png)
+
+Run Query P90 and Heatmap  
+
+![](assets/week2/P90%20and%20heatmap.png)
+
+
+✅ Run custom queries in Honeycomb and save them later eg. Latency by UserID, Recent Traces
 
 
