@@ -33,12 +33,58 @@
 
 ✅ Instrument our backend flask application to use Open Telemetry (OTEL) with Honeycomb.io as the provider.
 
+First created account in https://ui.honeycomb.io/ and followed the [GuideLine](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-2/journal/week2.md) 
 
 
+Added following code in requirements.txt
+
+```
+opentelemetry-api 
+opentelemetry-sdk 
+opentelemetry-exporter-otlp-proto-http 
+opentelemetry-instrumentation-flask 
+opentelemetry-instrumentation-requests
+```
+
+Installed above dependencies.
+
+![](assets/week2/Requirements%20installed%20.png)
 
 
+Updated app.py with following code.
 
+```
+from opentelemetry import trace
+from opentelemetry.instrumentation.flask import FlaskInstrumentor
+from opentelemetry.instrumentation.requests import RequestsInstrumentor
+from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
+from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.sdk.trace.export import BatchSpanProcessor
+```
 
+```
+# Initialize tracing and an exporter that can send data to Honeycomb
+provider = TracerProvider()
+processor = BatchSpanProcessor(OTLPSpanExporter())
+provider.add_span_processor(processor)
+trace.set_tracer_provider(provider)
+tracer = trace.get_tracer(__name__)
+```
+
+```
+# Initialize automatic instrumentation with Flask
+app = Flask(__name__)
+FlaskInstrumentor().instrument_app(app)
+RequestsInstrumentor().instrument()
+```
+
+Also added Environment variables to docker-compose file.
+
+```
+OTEL_EXPORTER_OTLP_ENDPOINT: "https://api.honeycomb.io"
+OTEL_EXPORTER_OTLP_HEADERS: "x-honeycomb-team=${HONEYCOMB_API_KEY}"
+OTEL_SERVICE_NAME: "${HONEYCOMB_SERVICE_NAME}"
+```
 
 ✅ Run queries to explore traces within Honeycomb.io
 
@@ -189,7 +235,6 @@ After watching new SubSegment [video](https://www.youtube.com/watch?v=4SGTW0Db5y
 
 
 ![](assets/week2/Sub%20Segments.png)
-
 
 
 
