@@ -86,6 +86,27 @@ OTEL_EXPORTER_OTLP_HEADERS: "x-honeycomb-team=${HONEYCOMB_API_KEY}"
 OTEL_SERVICE_NAME: "${HONEYCOMB_SERVICE_NAME}"
 ```
 
+I also added the environment variables with keys and service name.
+
+```
+export HONEYCOMB_API_KEY=""
+export HONEYCOMB_SERVICE_NAME="Cruddur"
+gp env HONEYCOMB_API_KEY=""
+gp env HONEYCOMB_SERVICE_NAME="Cruddur"
+```
+
+
+I performed few operations at port 3000 and 4567.
+
+https://4567-wasemaslam-awsbootcampc-6zu1jja30gr.ws-eu89.gitpod.io/api/activities/home
+https://4567-wasemaslam-awsbootcampc-6zu1jja30gr.ws-eu89.gitpod.io/api/activities/home
+
+
+
+Attach here traces from honeycomb
+
+
+
 ✅ Run queries to explore traces within Honeycomb.io
 
 
