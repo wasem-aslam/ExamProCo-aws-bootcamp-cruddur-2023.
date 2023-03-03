@@ -29,7 +29,7 @@
 
 ✅ Run custom queries in Honeycomb and save them later eg. Latency by UserID, Recent Traces
 
-###########################################################################################################################################################
+######################################################################################################
 
 ✅ Instrument our backend flask application to use Open Telemetry (OTEL) with Honeycomb.io as the provider.
 
