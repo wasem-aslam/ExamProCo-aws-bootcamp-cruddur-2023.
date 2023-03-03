@@ -183,6 +183,12 @@ Service Map after more tests.
 
 ![](assets/week2/Service%20map%20after%20some%20tests.png)
 
+After watching new SubSegment [video](https://www.youtube.com/watch?v=4SGTW0Db5y0) added code and its workingh fine and showing in AWS console.
+
+![](assets/week2/Query%20Traces.png)
+
+
+![](assets/week2/Sub%20Segments.png)
 
 
 
