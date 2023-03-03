@@ -307,11 +307,12 @@ Showing spans.
 
 ![](assets/week2/2%20spans.png)
 
+
+✅ Run custom queries in Honeycomb and save them later eg. Latency by UserID, Recent Traces
+
 Run Query P90 and Heatmap  
 
 ![](assets/week2/P90%20and%20heatmap.png)
 
-
-✅ Run custom queries in Honeycomb and save them later eg. Latency by UserID, Recent Traces
 
 
