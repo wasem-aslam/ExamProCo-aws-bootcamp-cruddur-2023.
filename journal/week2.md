@@ -99,17 +99,27 @@ gp env HONEYCOMB_SERVICE_NAME="Cruddur"
 I performed few operations at port 3000 and 4567.
 
 https://4567-wasemaslam-awsbootcampc-6zu1jja30gr.ws-eu89.gitpod.io/api/activities/home
+
 https://4567-wasemaslam-awsbootcampc-6zu1jja30gr.ws-eu89.gitpod.io/api/activities/home
-
-
-
-Attach here traces from honeycomb
-
 
 
 ✅ Run queries to explore traces within Honeycomb.io
 
 
+Attach here traces from honeycomb screenshots.
+
+
+
+![](assets/week2/Honeycomb%200.png)
+
+
+![](assets/week2/Honeycomb1.png)
+
+
+![](assets/week2/Honeycomb2.png)
+
+
+![](assets/week2/Honeycomb3.png)
 
 
 
