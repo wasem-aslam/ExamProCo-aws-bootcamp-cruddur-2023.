@@ -268,6 +268,99 @@ After watching new SubSegment [video](https://www.youtube.com/watch?v=4SGTW0Db5y
 ![](assets/week2/Sub%20Segments.png)
 
 
+✅ Integrate Rollbar for Error Logging
+
+## Rollbar
+
+https://rollbar.com/
+
+Create a new project in Rollbar called `Cruddur`
+
+Added following to `requirements.txt`
+
+
+```
+blinker
+rollbar
+```
+
+Installed dependencies
+
+```sh
+pip install -r requirements.txt
+```
+
+Copy the token code from rollbar web after login and set environment variables.
+
+```sh
+export ROLLBAR_ACCESS_TOKEN=""
+gp env ROLLBAR_ACCESS_TOKEN=""
+```
+
+Added to backend-flask for `docker-compose.yml`
+
+```yml
+ROLLBAR_ACCESS_TOKEN: "${ROLLBAR_ACCESS_TOKEN}"
+```
+
+Imports done for Rollbar
+
+```py
+import rollbar
+import rollbar.contrib.flask
+from flask import got_request_exception
+```
+
+```py
+rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
+@app.before_first_request
+def init_rollbar():
+    """init rollbar module"""
+    rollbar.init(
+        # access token
+        rollbar_access_token,
+        # environment name
+        'production',
+        # server root directory, makes tracebacks prettier
+        root=os.path.dirname(os.path.realpath(__file__)),
+        # flask already sets up logging
+        allow_logging_basic_config=False)
+
+    # send exceptions from `app` to rollbar, using flask's signal system.
+    got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
+```
+
+WAdded endpoint just for testing rollbar to `app.py`
+
+```py
+@app.route('/rollbar/test')
+def rollbar_test():
+    rollbar.report_message('Hello World!', 'warning')
+    return "Hello World!"
+```
+
+[Rollbar Flask Example](https://github.com/rollbar/rollbar-flask-example/blob/master/hello.py)
+
+
+Here my integration showing WARNING.
+
+![](assets/week2/Rollbar%20Warning%201.png)
+
+
+![](assets/week2/Rollbar%20warning%202.png)
+
+
+
+✅ Trigger an error an observe an error with Rollbar
+
+![](assets/week2/Rollbar%20Error%20on%20activities%20home.png)
+
+
+![](assets/week2/Rollbar%20showing%20Error%201.png)
+
+
+![](assets/week2/Rollbar%20showing%20Error%202.png)
+
 
  #  Homework Challenges 
 
