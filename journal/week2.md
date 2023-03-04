@@ -315,4 +315,76 @@ Run Query P90 and Heatmap
 ![](assets/week2/P90%20and%20heatmap.png)
 
 
+✅ Install WatchTower and write a custom logger to send application log data to - CloudWatch Log group
+
+Added  the `requirements.txt`
+
+```
+watchtower
+```
+
+Installed the requirements.
+
+```sh
+pip install -r requirements.txt
+```
+
+
+In `app.py` added imports.
+
+```
+import watchtower
+import logging
+from time import strftime
+```
+
+Also added in app.py
+```py
+# Configuring Logger to Use CloudWatch
+LOGGER = logging.getLogger(__name__)
+LOGGER.setLevel(logging.DEBUG)
+console_handler = logging.StreamHandler()
+cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
+LOGGER.addHandler(console_handler)
+LOGGER.addHandler(cw_handler)
+LOGGER.info("some message")
+```
+
+```py
+@app.after_request
+def after_request(response):
+    timestamp = strftime('[%Y-%b-%d %H:%M]')
+    LOGGER.error('%s %s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, response.status)
+    return response
+```
+
+We'll log something in an API endpoint
+```py
+LOGGER.info('Hello Cloudwatch! from  /api/activities/home')
+```
+
+Set the env var in your backend-flask for `docker-compose.yml`
+
+```yml
+      AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION}"
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+```
+After the request received the traces in AWS console cloud watch logs.
+
+![](assets/week2/Cloud%20watcg%20logs%200.png)
+
+
+Cloud Watch logs events showing.
+
+![](assets/week2/Cloud%20watch%20logs%201.png)
+
+Cloud watch cruddur group showing Logs and histogram praph after running Query.
+
+![](assets/week2/Cloud%20watcgh%20logs%20after%20run%20query%20graph.png)
+
+
+
+
+
 
