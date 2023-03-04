@@ -4,7 +4,7 @@ services:
     environment:
       FRONTEND_URL: "https://3000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
       BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
-      OTEL_SERVICE_NAME: 'backend-flask'
+      OTEL_SERVICE_NAME: "backend-flask"
       OTEL_EXPORTER_OTLP_ENDPOINT: "https://api.honeycomb.io"
       OTEL_EXPORTER_OTLP_HEADERS: "x-honeycomb-team=${HONEYCOMB_API_KEY}"
       AWS_XRAY_URL: "*4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}*"
@@ -13,7 +13,6 @@ services:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
       ROLLBAR_ACCESS_TOKEN: "${ROLLBAR_ACCESS_TOKEN}"
-
     build: ./backend-flask
     ports:
       - "4567:4567"
@@ -22,6 +21,11 @@ services:
   frontend-react-js:
     environment:
       REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+      REACT_APP_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_AWS_USER_POOLS_ID: "ap-southeast-1_KxdBLewx2"
+      REACT_APP_CLIENT_ID: "6e0gfqu3kgvs1s3cur2td2c8h0"
+
     build: ./frontend-react-js
     ports:
       - "3000:3000"
@@ -32,7 +36,7 @@ services:
     environment:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
-      AWS_REGION: "eu-north-1"
+      AWS_REGION: "ap-southeast-1"
     command:
       - "xray -o -b xray-daemon:2000"
     ports:
@@ -49,6 +53,7 @@ services:
     volumes:
       - "./docker/dynamodb:/home/dynamodblocal/data"
     working_dir: /home/dynamodblocal
+
   db:
     image: postgres:13-alpine
     restart: always
@@ -61,11 +66,12 @@ services:
       - db:/var/lib/postgresql/data
 
 # the name flag is a hack to change the default prepend folder
-# name when outputting the image names.
+# name when outputting the image names
 networks: 
   internal-network:
     driver: bridge
     name: cruddur
+    
 volumes:
   db:
     driver: local
