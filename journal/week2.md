@@ -31,6 +31,20 @@
 
 ######################################################################################################
 
+
+
+
+
+
+
+
+Week2 was hard as these task were difficult and challanging. I watched all the vidoes and perfrmed the tasks. I learned lot in thsi week and also struggle lot as there were errors while i was doing tasks so i did troubleshooting by looking different websites and at the end able to solve the errors.
+
+Here are the detaisls of my homework task.
+
+
+
+
 ✅ Instrument our backend flask application to use Open Telemetry (OTEL) with Honeycomb.io as the provider.
 
 First created account in https://ui.honeycomb.io/ and followed the [GuideLine](https://github.com/omenking/aws-bootcamp-cruddur-2023/blob/week-2/journal/week2.md) 
@@ -330,7 +344,7 @@ def init_rollbar():
     got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
 ```
 
-WAdded endpoint just for testing rollbar to `app.py`
+Added endpoint just for testing rollbar to `app.py`
 
 ```py
 @app.route('/rollbar/test')
@@ -342,9 +356,10 @@ def rollbar_test():
 [Rollbar Flask Example](https://github.com/rollbar/rollbar-flask-example/blob/master/hello.py)
 
 
-Here my integration showing WARNING.
+Here is my integration showing WARNING.
 
 ![](assets/week2/Rollbar%20Warning%201.png)
+
 
 
 ![](assets/week2/Rollbar%20warning%202.png)
@@ -353,18 +368,21 @@ Here my integration showing WARNING.
 
 ✅ Trigger an error an observe an error with Rollbar
 
+In the code chnaged to trigger the error.
+
 ![](assets/week2/Rollbar%20Error%20on%20activities%20home.png)
 
 
+Here its showing the Error in Rollbat appeared so we can diagnose more deep what and why happened. 
 ![](assets/week2/Rollbar%20showing%20Error%201.png)
 
+
+Rollbar showing Error which is not returing the valid value.
 
 ![](assets/week2/Rollbar%20showing%20Error%202.png)
 
 
  #  Homework Challenges 
-
-✅ Instrument Honeycomb for the frontend-application to observe network latency between frontend and backend[HARD]
 
 
 
